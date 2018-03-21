@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CustomNavbarPage } from '../custom-navbar/custom-navbar';
+import { ContactPage } from '../contact/contact';
 
 @Component({
   selector: 'page-about',
@@ -11,4 +13,7 @@ export class AboutPage {
 
   }
 
+  goToContact() {
+    this.navCtrl.push(ContactPage);
+  }
 }
